@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="AliceBlue">#F0F8FF</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="SkyBlue">#87CEEB</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="lightBLue">#ADD8E6</color>
+    <color name="powDerBlue">#B0E0E6</color>
+    <color name="cadetBlue">#5F9EA0</color>
+    <color name="azure">#F0FFFF</color>
+    <color name="lightCyan">#E1FFFF</color>
+
+</resources>

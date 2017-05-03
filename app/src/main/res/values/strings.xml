@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Interactive</string>
+    <string name="btn_interactive">调用MyAPP</string>
+    <string name="layout1_info">这是LinearLayout 1</string>
+    <string name="layout2_info">这是LinearLayout 2</string>
+    <string name="lay2_rot_left">左转</string>
+    <string name="lay2_rot_right">右转</string>
+
+    <string name="loadEnd">加载完成</string>
+    <string name="loading">请稍等，努力加载中...</string>
+
+    <string name="gv_item1">第一项</string>
+    <string name="gv_item2">第二项</string>
+    <string name="gv_item3">第三项</string>
+    <string name="gv_item4">第四项</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.crystal.hq.interactive.MainActivity">
+    <TextView
+        android:id="@+id/p_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interactive.MainActivity"
+        android:textSize="22sp" />
+
+    <ProgressBar
+        android:id="@+id/p_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:orientation="horizontal"
+        android:progress="0"
+        android:progressBarStyle="@android:style/Widget.ProgressBar.Horizontal"
+        android:scrollbarSize="20dp" />
+
+    <Button
+        android:id="@+id/p_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运行progress"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_interactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_interactive" />
+
+    <TextView
+        android:id="@+id/tv_interactiveInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+
+
+    <ViewFlipper
+        android:id="@+id/myViewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/layout1_info"
+                android:textColor="@color/LightSkyBlue"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/iv01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/im01" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/layout2_info"
+                android:textColor="@color/DeepSkyBlue"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/iv02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/im02" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/rot_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lay2_rot_left"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/rot_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rot_left"
+                    android:text="@string/lay2_rot_right"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contextClickable="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/twoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2*2"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/threeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/twoBtn"
+                    android:text="3*3"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/gv_show_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择需要的选项..."
+                android:textColor="@color/LightSkyBlue"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>
